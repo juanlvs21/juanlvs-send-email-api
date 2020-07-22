@@ -1,9 +1,11 @@
 const year = new Date().getFullYear();
 
-function contactMeTemplate(name, message) {
+function contactMeTemplate(name, email, message) {
   return `
     <div>
-      <h3>Hola Juan, <i><b> ${name}</b></i> se ha puesto en contacto contigo.</h3>
+      <h3>Hola Juan, se han puesto en contacto contigo.</h3>
+      <p>Nombre: ${name}</b>
+      <p>Correo electrónico: ${email}</b>
       <p>
         ${message}
       </p>

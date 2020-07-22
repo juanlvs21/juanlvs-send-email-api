@@ -21,7 +21,7 @@ async function contactMe(email, name, subject, message) {
     from: `Contacto 📧 ${name}-${email}`, // sender address
     to: myEmail, // list of receivers
     subject, // Subject line
-    html: contactMeTemplate(name, message), // html body
+    html: contactMeTemplate(name, email, message), // html body
   });
 }
 
