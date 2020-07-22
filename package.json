@@ -8,7 +8,7 @@
     "email": "juanlvs97@gmail.com",
     "url": "http://juanlvs.netlify.com/"
   },
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "nodemon ./src/index.js",
     "start": "node ./src/index.js"
