@@ -16,9 +16,7 @@ app.set("port", PORT);
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(
-  cors({ origin: ["https://juancode.com.ve/", "https://juanlvs.netlify.app/"] })
-);
+app.use(cors({ origin: "*" }));
 if (environment == "production") app.use(morgan("combined"));
 else app.use(morgan("dev"));
 
