@@ -31,7 +31,7 @@ app.get("/", function (req, res) {
   });
 });
 
-app.post("/email/contact-me", contactMe);
+app.post("/", contactMe);
 
 app.listen(app.get("port"), () => {
   console.log(`Server on port ${app.get("port")} 🚀`);

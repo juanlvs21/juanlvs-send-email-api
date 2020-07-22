@@ -5,12 +5,7 @@
     {
       "src": "/",
       "dest": "/index.js",
-      "methods": ["POST"]
-    },
-    {
-      "src": "/email/contact-me",
-      "dest": "/index.js",
-      "methods": ["POST"]
+      "methods": ["GET", "POST"]
     }
   ]
 }
