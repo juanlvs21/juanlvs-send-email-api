@@ -30,11 +30,11 @@ async function contactMe(req, res) {
       .then(() => {
         res.status(200).json({ status: "Ok!" });
       })
-      .catch((err) => {
-        res.status(400).json({ status: "Error desconocido", err });
+      .catch(() => {
+        res.status(400).json({ status: "Error desconocido",  })
       });
-  } catch (err) {
-    res.status(500).json({ status: "Internal Server Error!", err });
+  } catch () {
+    res.status(500).json({ status: "Internal Server Error!" });
   }
 }
 
