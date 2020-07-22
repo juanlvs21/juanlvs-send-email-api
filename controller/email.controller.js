@@ -30,8 +30,8 @@ async function contactMe(req, res) {
       .then(() => {
         res.status(200).json({ status: "Ok!" });
       })
-      .catch((err) => {
-        res.status(400).json({ status: "Error desconocido", err });
+      .catch(() => {
+        res.status(400).json({ status: "Error desconocido" });
       });
   } catch (error) {
     console.log(error);
